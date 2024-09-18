@@ -32,7 +32,6 @@ exports.saveTodos = (req, res, next) => {
       });
     })
     .catch(err => {
-      console.log('Errore nella cancellazione o nel salvataggio dei todos', err);
       res.status(500).json({ message: 'Errore nel salvataggio dei todos' });
     });
 };
